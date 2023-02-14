@@ -73,4 +73,8 @@ git pull = git fetch(신규커밋을 가져오다) + git merge(가져온신규�
 
 git clone 원격저장주소 원격저장주소에있는 소스코드가 모두 다운받아진다.
 
-Gitflow 전략 main - develop - feature - release - main 구도식의 전략방식.
+Gitflow 전략 main - develop - feature -hotfix- release - main 구도식의 전략방식.
+trunk - based 전략 - main - feature - main 의 전량방식 GithubFlow도 비슷함
+많은 테스트가 필요하다. 테스트를 자동화하던지 배포를 자동화하던지 하는 
+그런시스템에 적합하다.
+
