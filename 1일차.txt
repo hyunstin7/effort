@@ -69,4 +69,4 @@ git 에서의 변수 담는법 git remote add 변수명 내용
 만들어줘야 git push가 가능해진다
 
 git pull = git fetch(신규커밋을 가져오다) + git merge(가져온신규커밋을 
-내 로컬메인과 합치다)
+내 로컬메인과 합치다) 23444
