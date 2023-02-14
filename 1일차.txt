@@ -1,0 +1,64 @@
+1일차
+
+터미널에서
+git add 파일이름 >> staging area에 스테이징하는작업
+git commit -m '이름' >> compository 저장소
+
+여러개의 파일을 스테이징할때는
+git add 파일이름1 파일이름2
+
+모든 파일을 스테이징할때는
+git add .
+
+현재의 상태를 보고싶을때
+git status
+
+커밋한 내용을 보고싶을때
+git log --all --oneline
+
+커밋은 보통 작업한덩어리씩 완료할때마다 커밋하는게 일반적이다.
+
+staging 이랑 commit 작업을 쉽게하기위해 git editor 를 사용하면 간편하다 
++버튼으로 add (스테이징)해주고 메모를 적고 체크버튼으로 commit해준다
+
+git diff 는 최근파일과 현재파일의 차이점을 알려준다 j/k키로 스크롤바를 
+작동시킬수있고 q키로 나갈수있다. 근데 변경사항을 보기힘들어 잘 사용x
+
+git difftool 은 빔프로젝트를 보여주면서 차이점을 시각화로 보여주기에 편함.
+hjkl키로 움직일수있으며 나갈때는 :q키로 나가야한다
+
+commit 수정내용의 앞에있는 코드가 commit ID이다
+커밋을 특정 선택해서 수정사항을 보고싶은경우 git difftool commitID 입력
+
+커밋끼리 비교하는경우 git difftool commitID1 commitID1 입력
+
+git branch 는 commit의 복사본이다 수정하다가 오류가 날것을 대비해 복사본에다가
+작업하는방식을 일컫는다.
+
+git rebase 브렌치를 신규 커밋 메인브렌치로 이동시키고싶을때 사용한다.
+
+git 브랜치는 합병 종류에는 첫째로 3-way merge 기본적인 브렌치 합병방식이있으며
+모든 로그내역이 남는 장점이있어 상세하게 관리할수있다 
+
+rebase & fast-forward merge 방식은 메인브랜치가 아닌 다른브랜치의 커밋을떄어다가
+신규 메인브렌치에 붙이는 방식으로 메인브렌치의 로그 간결화 시킬때 사용한다.
+
+squash & merge는 새로운 브랜치들의 커밋을 모두 합쳐서 메인브렌치를 생성해 
+거기에 몰리게 만든다. 즉 로그내역이 상세화되어있지않고 간결화 시킬때 사용
+함으로써 단순한 작업이라던지 로그내역이 굳이 필요없을것같은 작업에 사용된다.
+
+git restore 파일이름 = 이전 가장최근 commit 으로 되돌려준다.
+git restore --staged 파일이름 = 특정 파일의 스테이징을 취소할때
+git restore --source 커밋코드 = 특정 커밋으로 복구하고싶을때
+git 은 과거조작이 불가능하다.
+
+git revert 커밋코드 =  특정 커밋의 행동을 취소시키고 새로운커밋을 만든다.
+(동시에 여러개를 취소시킬수있다)
+
+git revert HEAD = 방금 커밋했던거 취소하고 생성
+
+git reset --hard 커밋코드 = 커밋코드가 생성된 시점으로 돌아간다. 협업시 보통이용x
+git reset --soft 커밋코드 = 커밋코드가 스테이징된상태로. 
+git reset --mixed 커밋코드 = 커밋코드가 스테이징되지않은상태로.
+
+git 에서의 변수 담는법 git remote add 변수명 내용
