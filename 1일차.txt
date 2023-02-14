@@ -63,4 +63,4 @@ git reset --mixed 커밋코드 = 커밋코드가 스테이징되지않은상태�
 
 git 에서의 변수 담는법 git remote add 변수명 내용
 
-부르르르
+부르르르 우우우우우
