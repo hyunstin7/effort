@@ -78,3 +78,13 @@ trunk - based 전략 - main - feature - main 의 전량방식 GithubFlow도 비�
 많은 테스트가 필요하다. 테스트를 자동화하던지 배포를 자동화하던지 하는 
 그런시스템에 적합하다.
 
+git stash 최근 커밋에서의 변경된점은 모두 담아놓는다. 변경 리스트를 보기위에서는
+git stash list 라고 치면댐 메모를 추가적으로 적고싶으면
+git stash save 메모내용
+git stash pop stash에 가둬져있던 항목을 다시 불러올때 사용
+주석처리를 해도되지만 주석처리할경우 commit에도 적용이 되어 지져분해질수있다.
+
+stash list 부분삭제를 하고싶을경우
+git stash drop stash번호
+git stash clear stashlist 전부삭제
+
