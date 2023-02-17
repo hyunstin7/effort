@@ -1,0 +1,46 @@
+div {
+  box-sizing: border-box;
+}
+
+.box, .list .box {
+  width: 50vw;
+  height: 10vh;
+  padding: 1vw;
+  border-left: 1px #eee solid;
+  border-right: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+}
+
+.boxx, .alert .boxx {
+  height: 10vh;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.boxx span, .alert .boxx span {
+  font-weight: 800;
+}
+
+.list .box1 {
+  border: none;
+  background-color: aqua;
+}
+
+.col-3 {
+  width: 16.6666666667%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.alert .boxx1 {
+  background-color: #d11f1f;
+}
+.alert .boxx2 {
+  background-color: #41089e;
+}
+.alert .boxx3 {
+  background-color: #27890f;
+}/*# sourceMappingURL=test.css.map */

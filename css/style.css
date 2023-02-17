@@ -1,0 +1,102 @@
+.btn {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50px;
+    
+}
+
+.btn:hover {
+    animation: btn 1s 0s 1 ease-in;
+}
+
+@keyframes btn {
+    0%{
+       transform: rotate(0deg); 
+    }
+    33%{
+        transform: rotate(30deg);  
+    }
+    66%{
+        transform: rotate(-30deg);  
+    }
+    100%{
+        transform: rotate(0deg);  
+    }
+}
+
+.plus-btn {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.r {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+}
+
+.c {
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+}
+
+
+
+.plus-btn:hover {
+    animation: rot 1s 0s 1 ease-out;
+    transition: .5s;
+}
+
+@keyframes rot {
+    0%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(-30deg);
+    }
+    100%{
+        transform:rotate(60deg) scale(1.5); 
+    }
+}
+
+.menu {
+    width: 100px;
+    height: 400px;
+    position: relative;
+    background-color: #000;
+    transition: 1s;
+}
+
+.menu:hover {
+    width: 200px;
+}
+
+
+p:first-child {
+    text-align: center;
+    position: absolute;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    left: 50%;
+    color: #fff;
+}
+
+p:last-child {
+    text-align: center;
+    position: absolute;
+    margin-top: 40px;
+    transform: translateX(-50%);
+    left: 50%;
+    color: #fff;
+}
